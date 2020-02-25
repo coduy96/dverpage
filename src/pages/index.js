@@ -100,7 +100,7 @@ function Home() {
         <div className={styles.announcementInner}>
           Chương trình khuyến mãi{' '}
           <Link to={useBaseUrl('/docs/migrating-from-v1-to-v2')}>
-            v1 to v2 migration guide
+            . Xem ngay!
           </Link>
           .
         </div>
