@@ -1,5 +1,5 @@
 module.exports = {
-  title: 'My Site',
+  title: 'Dver solution',
   tagline: 'The tagline of my site',
   url: 'https://your-docusaurus-test-site.com',
   baseUrl: '/',
@@ -8,16 +8,17 @@ module.exports = {
   projectName: 'docusaurus', // Usually your repo name.
   themeConfig: {
     navbar: {
-      title: 'My Site',
+      title: 'Dver',
       logo: {
-        alt: 'My Site Logo',
+        alt: 'Dver logo',
         src: 'img/logo.svg',
       },
       links: [
-        {to: 'docs/doc1', label: 'Docs', position: 'left'},
         {to: 'blog', label: 'Blog', position: 'left'},
+        {to: 'showcase', label: 'Showcase', position: 'left'},
+        {to: 'feedback', label: 'Feedback', position: 'left'},
         {
-          href: 'https://github.com/facebook/docusaurus',
+          href: 'https://github.com/coduy96',
           label: 'GitHub',
           position: 'right',
         },
@@ -27,50 +28,62 @@ module.exports = {
       style: 'dark',
       links: [
         {
-          title: 'Docs',
+          title: 'Về chúng tôi',
           items: [
             {
-              label: 'Style Guide',
+              label: 'Chúng tôi là ai? ',
               to: 'docs/doc1',
             },
             {
-              label: 'Second Doc',
+              label: 'Vì sao chọn chúng tôi ?',
               to: 'docs/doc2',
             },
           ],
         },
         {
-          title: 'Community',
+          title: 'Các công nghệ được áp dụng',
           items: [
             {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+              label: 'ExpressJS',
+              href: 'https://expressjs.com/',
             },
             {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
+              label: 'React',
+              href: 'https://reactjs.org/',
+            },
+            {
+              label: 'React Native',
+              href: 'https://reactnative.dev/',
+            },
+            {
+              label: 'Mongodb',
+              href: 'https://www.mongodb.com/',
             },
           ],
         },
         {
-          title: 'Social',
+          title: 'Cộng đồng',
           items: [
             {
               label: 'Blog',
-              to: 'blog',
+              to: 'docs/doc1',
             },
             {
               label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
+              href: 'https://github.com/coduy96',
             },
             {
-              label: 'Twitter',
-              href: 'https://twitter.com/docusaurus',
+              label: 'Facebook',
+              href: 'https://www.facebook.com/cotrinh.hienduy',
+            },
+            {
+              label: 'Youtube',
+              href: 'https://www.youtube.com',
             },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Dver Team`,
     },
   },
   presets: [
