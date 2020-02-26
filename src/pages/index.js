@@ -5,37 +5,50 @@ import Link from "@docusaurus/Link";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import useBaseUrl from "@docusaurus/useBaseUrl";
 import styles from "./styles.module.css";
+import Image from '@theme/IdealImage';
 
 const features = [
   {
-    title: <>Easy to Use</>,
-    imageUrl: "img/undraw_docusaurus_mountain.svg",
+    title: <>Thiết kế hợp lý</>,
+    imageUrl: "img/undraw_design.svg",
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        Sản phẩm của chúng tôi tạo ra đáp ứng tất cả các yêu cầu kỹ thuật và cực
+        kì thân thiện với người dùng. Khách hàng của bạn sẽ bị thu hút bởi kế
+        sạch đẹp.
       </>
     )
   },
   {
-    title: <>Focus on What Matters</>,
-    imageUrl: "img/undraw_docusaurus_tree.svg",
+    title: <>Được tối ưu tốt</>,
+    imageUrl: "img/undraw_code.svg",
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        Mỗi một sản phẩm đều được tối ưu về tốc độ, bảo mật và SEO. Chúng tôi
+        luôn cập nhật những công nghệ tốt để mang lại cho bạn một trải nghiệm sử
+        dụng mượt mà và an toàn.
       </>
     )
   },
   {
-    title: <>Powered by React</>,
-    imageUrl: "img/undraw_docusaurus_react.svg",
+    title: <>Giá trị bỏ ra</>,
+    imageUrl: "img/undraw_saving.svg",
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        Quá trình phân tích đánh giá dự án chuyên sâu nhằm giảm tối đa chi phí
+        cho bạn. Ở Dver số tiền bạn bỏ ra luôn luôn xứng đáng với giá trị bạn sẽ
+        nhận lại.
       </>
     )
+  }
+];
+
+const QUOTES = [
+  {
+    thumbnail: require("../data/quotes/duyco.jpg"),
+    name: "Duy Cổ",
+    title: "Founder Dver",
+    text: <>JS fullstack developer fb.com/cotrinh.hienduy</>
   }
 ];
 
@@ -62,7 +75,6 @@ function Home() {
       title={`Team phát triển ứng dụng`}
       description="Description will go into a meta tag in <head />"
     >
-    
       <div className={styles.hero}>
         <div className={styles.heroInner}>
           <h1 className={styles.heroProjectTagline}>
@@ -72,9 +84,9 @@ function Home() {
               src={useBaseUrl("img/logo.svg")}
             />
             Bạn muốn <span className={styles.heroProjectKeywords}>có</span>{" "}
-            websites <span className={styles.heroProjectKeywords}>ứng dụng di động</span>
-            , thật{" "}
-            <span className={styles.heroProjectKeywords}>tốt</span>
+            websites{" "}
+            <span className={styles.heroProjectKeywords}>ứng dụng di động</span>
+            , thật <span className={styles.heroProjectKeywords}>tốt</span>
           </h1>
           <div className={styles.indexCtas}>
             <Link
@@ -98,14 +110,16 @@ function Home() {
 
       <div className={classnames(styles.announcement, styles.announcementDark)}>
         <div className={styles.announcementInner}>
-          Chương trình khuyến mãi{' '}
-          <Link to={useBaseUrl('/docs/migrating-from-v1-to-v2')}>
+          Chương trình khuyến mãi{" "}
+          <Link to={useBaseUrl("/docs/migrating-from-v1-to-v2")}>
             . Xem ngay!
           </Link>
           .
         </div>
       </div>
-
+      <div
+        className={classnames(styles.section, styles.sectionAlt, styles.quotes)}
+      ></div>
       <main>
         {features && features.length && (
           <section className={styles.features}>
@@ -119,6 +133,34 @@ function Home() {
           </section>
         )}
       </main>
+
+      <div
+        className={classnames(styles.section, styles.sectionAlt, styles.quotes)}
+      >
+        <div className="container">
+          <div className="row">
+            {QUOTES.map(quote => (
+              <div className="col" key={quote.name}>
+                <div className="avatar avatar--vertical margin-bottom--sm">
+                  <Image
+                    alt={quote.name}
+                    className="avatar__photo avatar__photo--xl"
+                    img={quote.thumbnail}
+                    style={{ overflow: "hidden" }}
+                  />
+                  <div className="avatar__intro padding-top--sm">
+                    <h4 className="avatar__name">{quote.name}</h4>
+                    <small className="avatar__subtitle">{quote.title}</small>
+                  </div>
+                </div>
+                <p className="text--center text--italic padding-horiz--md">
+                  {quote.text}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
     </Layout>
   );
 }

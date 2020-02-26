@@ -5,7 +5,18 @@ module.exports = {
   baseUrl: '/',
   favicon: 'img/favicon.ico',
   organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  projectName: 'docusaurus',
+  plugins: [
+    [
+      '@docusaurus/plugin-ideal-image',
+      {
+        quality: 70,
+        max: 1030, // max resized image's size.
+        min: 640, // min resized image's size. if original is lower, use that size.
+        steps: 2, // the max number of images generated between min and max (inclusive)
+      },
+    ],
+  ], // Usually your repo name.
   themeConfig: {
     navbar: {
       title: 'Dver',
@@ -14,9 +25,8 @@ module.exports = {
         src: 'img/logo.svg',
       },
       links: [
-        {to: 'blog', label: 'Blog', position: 'left'},
-        {to: 'showcase', label: 'Showcase', position: 'left'},
-        {to: 'feedback', label: 'Feedback', position: 'left'},
+        {to: 'blog', label: 'Chia sẻ của Dver', position: 'left'},
+        {to: 'showcase', label: 'Dự án đã hoàn thành', position: 'left'},
         {
           href: 'https://github.com/coduy96',
           label: 'GitHub',
@@ -32,11 +42,11 @@ module.exports = {
           items: [
             {
               label: 'Chúng tôi là ai? ',
-              to: 'docs/doc1',
+              to: '/',
             },
             {
               label: 'Vì sao chọn chúng tôi ?',
-              to: 'docs/doc2',
+              to: '/',
             },
           ],
         },
@@ -66,7 +76,7 @@ module.exports = {
           items: [
             {
               label: 'Blog',
-              to: 'docs/doc1',
+              to: 'Blog',
             },
             {
               label: 'GitHub',
@@ -83,7 +93,7 @@ module.exports = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} Dver Team`,
+      copyright: `Copyright © ${new Date().getFullYear()} Dver-Team`,
     },
   },
   presets: [
@@ -94,6 +104,14 @@ module.exports = {
           sidebarPath: require.resolve('./sidebars.js'),
           editUrl:
             'https://github.com/facebook/docusaurus/edit/master/website/',
+        },
+        blog: {
+          path: './blog/',
+          postsPerPage: 3,
+          feedOptions: {
+            type: 'all',
+            copyright: `Copyright © ${new Date().getFullYear()} Facebook, Inc.`,
+          },
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
