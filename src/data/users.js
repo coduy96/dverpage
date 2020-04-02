@@ -12,18 +12,18 @@ const users = [
     description:
       "Ứng dụng điện thoại xử dụng bluetooth BLE để điều khiển xe máy",
     preview: require("./showcase/algolia.png"),
-    website: "/",
-    source: "/",
+    website: "https://play.google.com/",
+    source: "https://play.google.com/",
     fbOpenSource: false,
     pinned: false
   },
   {
-    title: "Theo dỗi điểm danh",
+    title: "Theo dõi điểm danh",
     description:
-      "Ứng dụng điện thoại giúp nhân viên theo dỗi và kiểm tra điểm danh",
+      "Ứng dụng điện thoại giúp nhân viên theo dõi và kiểm tra điểm danh",
     preview: require("./showcase/DiemDanhShowcase.png"),
-    website: "/",
-    source: "/",
+    website: "https://play.google.com/",
+    source: "https://play.google.com/",
     fbOpenSource: false,
     pinned: false
   },
@@ -31,8 +31,8 @@ const users = [
     title: "Luyện thi THPT",
     description: "Ứng dụng hỗ trợ ôn thi THPT thông qua điện thoại di động",
     preview: require("./showcase/LuyenThiShowcase.png"),
-    website: "/",
-    source: "/",
+    website: "https://play.google.com/",
+    source: "https://play.google.com/",
     fbOpenSource: false,
     pinned: false
   },
@@ -40,8 +40,8 @@ const users = [
     title: "Thebookstore",
     description: "Trang thương mại và giới thiệu sách",
     preview: require("./showcase/TheBookStoreShowcase.png"),
-    website: "/",
-    source: "/",
+    website: "thebookstore.life",
+    source: "thebookstore.life",
     fbOpenSource: false,
     pinned: false
   }

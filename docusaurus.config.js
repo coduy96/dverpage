@@ -32,7 +32,8 @@ module.exports = {
           activeBasePath: "docs",
           label: "Tài liệu",
           position: "left"
-        }
+        },
+        { to: "contact", label: "Liên lạc", position: "left" },
       ]
     },
     footer: {

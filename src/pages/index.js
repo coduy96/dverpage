@@ -117,7 +117,7 @@ function Home() {
           <div className={styles.indexCtas}>
             <Link
               className={styles.indexCtasGetStartedButton}
-              to={useBaseUrl("/")}
+              to={useBaseUrl("contact")}
             >
               Bắt đầu ngay thôi!
             </Link>
@@ -136,7 +136,7 @@ function Home() {
 
       <div className={classnames(styles.announcement, styles.announcementDark)}>
         <div className={styles.announcementInner}>
-          Chương trình khuyến mãi <Link to={useBaseUrl("/")}>. Xem ngay!</Link>.
+          Chương trình khuyến mãi <Link to={useBaseUrl("contact")}>. Xem ngay!</Link>.
         </div>
       </div>
 
