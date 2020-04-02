@@ -5,7 +5,7 @@ import Link from "@docusaurus/Link";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import useBaseUrl from "@docusaurus/useBaseUrl";
 import styles from "./styles.module.css";
-import Image from '@theme/IdealImage';
+import Image from "@theme/IdealImage";
 
 const features = [
   {
@@ -13,9 +13,9 @@ const features = [
     imageUrl: "img/undraw_design.svg",
     description: (
       <>
-        Sản phẩm của chúng tôi tạo ra đáp ứng tất cả các yêu cầu kỹ thuật và cực
-        kì thân thiện với người dùng. Khách hàng của bạn sẽ bị thu hút bởi kế
-        sạch đẹp.
+        Chúng tôi tạo ra sản phẩm đáp ứng tất cả các yêu cầu kỹ thuật và cực kì
+        thân thiện với người dùng. Khách hàng của bạn sẽ bị thu hút bởi kế sạch
+        đẹp.
       </>
     )
   },
@@ -24,9 +24,9 @@ const features = [
     imageUrl: "img/undraw_code.svg",
     description: (
       <>
-        Mỗi một sản phẩm đều được tối ưu về tốc độ, bảo mật và SEO. Chúng tôi
-        luôn cập nhật những công nghệ tốt để mang lại cho bạn một trải nghiệm sử
-        dụng mượt mà và an toàn.
+        Mỗi một sản phẩm đều được tối ưu về tốc độ và bảo mật. Chúng tôi luôn
+        cập nhật những công nghệ tốt để mang lại cho bạn một trải nghiệm sử dụng
+        mượt mà và an toàn.
       </>
     )
   },
@@ -36,11 +36,35 @@ const features = [
     description: (
       <>
         Quá trình phân tích đánh giá dự án chuyên sâu nhằm giảm tối đa chi phí
-        cho bạn. Ở Dver số tiền bạn bỏ ra luôn luôn xứng đáng với giá trị bạn sẽ
-        nhận lại.
+        cho bạn. Ở Dver số tiền bạn bỏ ra luôn xứng đáng với giá trị bạn sẽ nhận
+        lại.
       </>
     )
-  }
+  },
+  {
+    title: <>Phát triển ứng dụng MOBILE</>,
+    imageUrl: "img/undraw_os_upgrade.svg",
+    description: (
+      <>
+      </>
+    )
+  },
+  {
+    title: <>Phát triển ứng dụng web</>,
+    imageUrl: "img/undraw_web_developer.svg",
+    description: (
+      <>
+      </>
+    )
+  },
+  {
+    title: <>Phát triển API</>,
+    imageUrl: "img/undraw_google_analytics.svg",
+    description: (
+      <>
+      </>
+    )
+  },
 ];
 
 const QUOTES = [
@@ -48,7 +72,7 @@ const QUOTES = [
     thumbnail: require("../data/quotes/duyco.jpg"),
     name: "Duy Cổ",
     title: "Founder Dver",
-    text: <>JS fullstack developer fb.com/cotrinh.hienduy</>
+    text: <>Fullstack developer</>
   }
 ];
 
@@ -72,8 +96,8 @@ function Home() {
   const { siteConfig = {} } = context;
   return (
     <Layout
-      title={`Team phát triển ứng dụng`}
-      description="Description will go into a meta tag in <head />"
+      title={`Phát triển ứng dụng`}
+      description="Phát triển ứng dụng <head />"
     >
       <div className={styles.hero}>
         <div className={styles.heroInner}>
@@ -83,15 +107,17 @@ function Home() {
               className={styles.heroLogo}
               src={useBaseUrl("img/logo.svg")}
             />
-            Bạn muốn <span className={styles.heroProjectKeywords}>có</span>{" "}
-            websites{" "}
-            <span className={styles.heroProjectKeywords}>ứng dụng di động</span>
-            , thật <span className={styles.heroProjectKeywords}>tốt</span>
+            Tư vấn <span className={styles.heroProjectKeywords}>và</span> phát
+            triển{" "}
+            <span className={styles.heroProjectKeywords}>
+              ứng dụng đa nền tảng{" "}
+            </span>
+            <span className={styles.heroProjectKeywords}></span>
           </h1>
           <div className={styles.indexCtas}>
             <Link
               className={styles.indexCtasGetStartedButton}
-              to={useBaseUrl("docs/introduction")}
+              to={useBaseUrl("/")}
             >
               Bắt đầu ngay thôi!
             </Link>
@@ -110,13 +136,10 @@ function Home() {
 
       <div className={classnames(styles.announcement, styles.announcementDark)}>
         <div className={styles.announcementInner}>
-          Chương trình khuyến mãi{" "}
-          <Link to={useBaseUrl("/docs/migrating-from-v1-to-v2")}>
-            . Xem ngay!
-          </Link>
-          .
+          Chương trình khuyến mãi <Link to={useBaseUrl("/")}>. Xem ngay!</Link>.
         </div>
       </div>
+
       <div
         className={classnames(styles.section, styles.sectionAlt, styles.quotes)}
       ></div>

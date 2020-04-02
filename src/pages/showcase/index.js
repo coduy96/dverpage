@@ -14,9 +14,9 @@ import classnames from 'classnames';
 import styles from './styles.module.css';
 import users from '../../data/users';
 
-const TITLE = 'Tất cả dự án đã hoàn thánh';
+const TITLE = 'Tất cả dự án đã hoàn thành';
 const DESCRIPTION =
-  'Dưới đây là tất cả những dự án mã chúng tôi đã hoàn thành và nhận được phản hồi tích cực từ phía khách hàng';
+  'Những dự án đã hoàn thành và nhận được phản hồi tích cực từ phía khách hàng';
 
 function Showcase() {
   return (
@@ -46,22 +46,13 @@ function Showcase() {
                 {(user.website || user.source) && (
                   <div className="card__footer">
                     <div className="button-group button-group--block">
-                      {user.website && (
-                        <a
-                          className="button button--small button--secondary button--block"
-                          href={user.website}
-                          target="_blank"
-                          rel="noreferrer noopener">
-                          Website
-                        </a>
-                      )}
                       {user.source && (
                         <a
                           className="button button--small button--secondary button--block"
                           href={user.source}
                           target="_blank"
                           rel="noreferrer noopener">
-                          Source
+                          Chi tiết
                         </a>
                       )}
                     </div>
