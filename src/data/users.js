@@ -40,8 +40,8 @@ const users = [
     title: "Thebookstore",
     description: "Trang thương mại và giới thiệu sách",
     preview: require("./showcase/TheBookStoreShowcase.png"),
-    website: "thebookstore.life",
-    source: "thebookstore.life",
+    website: "https://thebookstore.life",
+    source: "https://thebookstore.life",
     fbOpenSource: false,
     pinned: false
   }
