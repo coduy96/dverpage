@@ -1,7 +1,7 @@
 module.exports = {
-  title: "Dver solution",
-  tagline: "The tagline of my site",
-  url: "https://your-docusaurus-test-site.com",
+  title: "Make your ideas simpler",
+  tagline: "dver",
+  url: "https://dver.now.sh",
   baseUrl: "/",
   favicon: "img/favicon.ico",
   organizationName: "facebook", // Usually your GitHub org/user name.

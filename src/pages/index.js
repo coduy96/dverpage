@@ -13,7 +13,7 @@ const features = [
     imageUrl: "img/undraw_design.svg",
     description: (
       <>
-        Chúng tôi tạo ra sản phẩm đáp ứng tất cả các yêu cầu kỹ thuật và cực kì
+        Dver tạo ra sản phẩm đáp ứng tất cả các yêu cầu kỹ thuật và cực kì
         thân thiện với người dùng. Khách hàng của bạn sẽ bị thu hút bởi kế sạch
         đẹp.
       </>
@@ -24,7 +24,7 @@ const features = [
     imageUrl: "img/undraw_code.svg",
     description: (
       <>
-        Mỗi một sản phẩm đều được tối ưu về tốc độ và bảo mật. Chúng tôi luôn
+        Mỗi một sản phẩm đều được tối ưu về tốc độ và bảo mật. Dver luôn
         cập nhật những công nghệ tốt để mang lại cho bạn một trải nghiệm sử dụng
         mượt mà và an toàn.
       </>
@@ -97,7 +97,7 @@ function Home() {
   return (
     <Layout
       title={`Phát triển ứng dụng`}
-      description="Phát triển ứng dụng <head />"
+      description="Phát triển ứng dụng"
     >
       <div className={styles.hero}>
         <div className={styles.heroInner}>
