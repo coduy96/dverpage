@@ -62,7 +62,7 @@ Hiện tại trang này chỉ hiển thị thông tin lấy từ tài khoảng F
 ---
 ## Link tải ứng dụng
 
-Link tải ứng dụng [Tải ở đây!](google.com).
+Link tải ứng dụng [Android](https://drive.google.com/file/d/1BTzc9LvJagrJXSZpgNETF6XnYLunMfXv/view?usp=sharing).
 
 
 
