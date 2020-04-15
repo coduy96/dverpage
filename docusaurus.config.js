@@ -27,12 +27,12 @@ module.exports = {
       links: [
         { to: "blog", label: "Chia sẻ của Dver", position: "left" },
         { to: "showcase", label: "Dự án đã hoàn thành", position: "left" },
-        {
-          to: "docs/doc1",
-          activeBasePath: "docs",
-          label: "Tài liệu",
-          position: "left"
-        },
+        // {
+        //   to: "docs/doc1",
+        //   activeBasePath: "docs",
+        //   label: "Tài liệu",
+        //   position: "left"
+        // },
         { to: "contact", label: "Liên lạc", position: "left" },
       ]
     },
