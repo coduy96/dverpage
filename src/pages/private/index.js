@@ -14,8 +14,8 @@ import classnames from "classnames";
 import styles from "./styles.module.css";
 import users from "../../data/users";
 
-const TITLE = "Liên lạc với Dver";
-const DESCRIPTION = "Để có một sản phẩm tuyệt vời";
+const TITLE = "Không được phép truy cập";
+const DESCRIPTION = "Đây là sản phẩm nội bộ dùng cho doanh nghiệp không thể xem chi tiết! Bạn có thể xem chi tiết những dự án khác.";
 
 function Showcase() {
   const [isLoading, setLoading] = useState(true);
@@ -25,17 +25,9 @@ function Showcase() {
         <div className="text--center margin-bottom--xl">
           <h1>{TITLE}</h1>
           <p>{DESCRIPTION}</p>
-          <div className={styles.announcementInner}>
-            <iframe
-              onLoad={() => setLoading(!isLoading)}
-              className={isLoading ? styles.loader : null}
-              scrolling="no"
-              src="https://thirsty-newton-e2d20b.netlify.com/"
-              width="400"
-              height="590"
-              frameborder="0"
-            ></iframe>
-          </div>
+        
+          <img src='img/undraw_private.svg' alt='IMG' />
+        
         </div>
       </div>
     </Layout>

@@ -136,7 +136,7 @@ function Home() {
 
       <div className={classnames(styles.announcement, styles.announcementDark)}>
         <div className={styles.announcementInner}>
-          Chương trình khuyến mãi <Link to={useBaseUrl("contact")}>. Xem ngay!</Link>.
+          Chương trình khuyến mãi <Link to={useBaseUrl("contact")}>. Chi tiết !</Link>
         </div>
       </div>
 
