@@ -14,7 +14,7 @@ const features = [
     description: <></>,
   },
   {
-    title: <>Phát triển ứng dụng web</>,
+    title: <>Phát triển ứng dụng WEB</>,
     imageUrl: "img/undraw_web_developer.svg",
     description: <></>,
   },
