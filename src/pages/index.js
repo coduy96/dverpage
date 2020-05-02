@@ -9,26 +9,40 @@ import Image from "@theme/IdealImage";
 
 const features = [
   {
+    title: <>Phát triển ứng dụng MOBILE</>,
+    imageUrl: "img/undraw_os_upgrade.svg",
+    description: <></>,
+  },
+  {
+    title: <>Phát triển ứng dụng web</>,
+    imageUrl: "img/undraw_web_developer.svg",
+    description: <></>,
+  },
+  {
+    title: <>Phát triển API</>,
+    imageUrl: "img/undraw_google_analytics.svg",
+    description: <></>,
+  },
+  {
     title: <>Thiết kế hợp lý</>,
     imageUrl: "img/undraw_design.svg",
     description: (
       <>
-        Dver tạo ra sản phẩm đáp ứng tất cả các yêu cầu kỹ thuật và cực kì
-        thân thiện với người dùng. Khách hàng của bạn sẽ bị thu hút bởi kế sạch
-        đẹp.
+        Dver tạo ra sản phẩm đáp ứng tất cả các yêu cầu kỹ thuật và cực kì thân
+        thiện với người dùng. Khách hàng của bạn sẽ bị thu hút bởi kế sạch đẹp.
       </>
-    )
+    ),
   },
   {
     title: <>Được tối ưu tốt</>,
     imageUrl: "img/undraw_code.svg",
     description: (
       <>
-        Mỗi một sản phẩm đều được tối ưu về tốc độ và bảo mật. Dver luôn
-        cập nhật những công nghệ tốt để mang lại cho bạn một trải nghiệm sử dụng
+        Mỗi một sản phẩm đều được tối ưu về tốc độ và bảo mật. Dver luôn cập
+        nhật những công nghệ tốt để mang lại cho bạn một trải nghiệm sử dụng
         mượt mà và an toàn.
       </>
-    )
+    ),
   },
   {
     title: <>Giá trị bỏ ra</>,
@@ -39,31 +53,7 @@ const features = [
         cho bạn. Ở Dver số tiền bạn bỏ ra luôn xứng đáng với giá trị bạn sẽ nhận
         lại.
       </>
-    )
-  },
-  {
-    title: <>Phát triển ứng dụng MOBILE</>,
-    imageUrl: "img/undraw_os_upgrade.svg",
-    description: (
-      <>
-      </>
-    )
-  },
-  {
-    title: <>Phát triển ứng dụng web</>,
-    imageUrl: "img/undraw_web_developer.svg",
-    description: (
-      <>
-      </>
-    )
-  },
-  {
-    title: <>Phát triển API</>,
-    imageUrl: "img/undraw_google_analytics.svg",
-    description: (
-      <>
-      </>
-    )
+    ),
   },
 ];
 
@@ -72,8 +62,8 @@ const QUOTES = [
     thumbnail: require("../data/quotes/duyco.jpg"),
     name: "Duy Cổ",
     title: "Founder Dver",
-    text: <>Fullstack developer</>
-  }
+    text: <>Fullstack developer</>,
+  },
 ];
 
 function Feature({ imageUrl, title, description }) {
@@ -95,10 +85,7 @@ function Home() {
   const context = useDocusaurusContext();
   const { siteConfig = {} } = context;
   return (
-    <Layout
-      title={`Phát triển ứng dụng`}
-      description="Phát triển ứng dụng"
-    >
+    <Layout title={`Phát triển ứng dụng`} description="Phát triển ứng dụng">
       <div className={styles.hero}>
         <div className={styles.heroInner}>
           <h1 className={styles.heroProjectTagline}>
@@ -136,7 +123,8 @@ function Home() {
 
       <div className={classnames(styles.announcement, styles.announcementDark)}>
         <div className={styles.announcementInner}>
-          Chương trình khuyến mãi <Link to={useBaseUrl("contact")}>. Chi tiết !</Link>
+          Chương trình khuyến mãi{" "}
+          <Link to={useBaseUrl("contact")}>. Chi tiết !</Link>
         </div>
       </div>
 
@@ -162,7 +150,7 @@ function Home() {
       >
         <div className="container">
           <div className="row">
-            {QUOTES.map(quote => (
+            {QUOTES.map((quote) => (
               <div className="col" key={quote.name}>
                 <div className="avatar avatar--vertical margin-bottom--sm">
                   <Image

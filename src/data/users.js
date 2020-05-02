@@ -21,8 +21,8 @@ const users = [
     title: "Luyện thi THPT",
     description: "Ứng dụng hỗ trợ ôn thi THPT thông qua điện thoại di động",
     preview: require("./showcase/LuyenThiShowcase.png"),
-    website: "https://play.google.com/",
-    source: "https://play.google.com/",
+    website: "https://play.google.com/store/apps/details?id=com.vers.luyenthithpt",
+    source: "https://play.google.com/store/apps/details?id=com.vers.luyenthithpt",
     fbOpenSource: false,
     pinned: false
   },
