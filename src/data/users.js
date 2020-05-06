@@ -27,6 +27,15 @@ const users = [
     pinned: false
   },
   {
+    title: "Super number",
+    description: "Game di động giúp nâng cao khả năng tính toán!",
+    preview: require("./showcase/supernumber.png"),
+    website: "https://play.google.com/store/apps/details?id=com.finme.supernumber",
+    source: "https://play.google.com/store/apps/details?id=com.finme.supernumber",
+    fbOpenSource: false,
+    pinned: false
+  },
+  {
     title: "Điều khiển xe máy",
     description:
       "Ứng dụng điện thoại xử dụng bluetooth BLE để điều khiển xe máy (Ứng dụng nội bộ không công khai)",
