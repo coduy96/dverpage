@@ -23,6 +23,9 @@ const features = [
     imageUrl: "img/undraw_google_analytics.svg",
     description: <></>,
   },
+];
+
+const features2 = [
   {
     title: <>Thiết kế hợp lý</>,
     imageUrl: "img/undraw_design.svg",
@@ -56,13 +59,12 @@ const features = [
     ),
   },
 ];
-
 const QUOTES = [
   {
     thumbnail: require("../data/quotes/duyco.jpg"),
     name: "Duy Cổ",
-    title: "Founder Dver",
-    text: <>Fullstack developer</>,
+    title: "Fullstack developer",
+    text: <>" Tôi thích sự bất khả thi trong những ý tưởng! "</>,
   },
 ];
 
@@ -123,8 +125,8 @@ function Home() {
 
       <div className={classnames(styles.announcement, styles.announcementDark)}>
         <div className={styles.announcementInner}>
-          Chương trình khuyến mãi{" "}
-          <Link to={useBaseUrl("contact")}>. Chi tiết !</Link>
+          Biến ý tưởng của bạn thành thực tế.{" "}
+          <Link to={useBaseUrl("contact")}>Tại sao không ?</Link>
         </div>
       </div>
 
@@ -137,6 +139,20 @@ function Home() {
             <div className="container">
               <div className="row">
                 {features.map((props, idx) => (
+                  <Feature key={idx} {...props} />
+                ))}
+              </div>
+            </div>
+          </section>
+        )}
+
+        <hr className={styles.dotted, "container"}/>
+
+        {features2 && features2.length && (
+          <section className={styles.features}>
+            <div className="container">
+              <div className="row">
+                {features2.map((props, idx) => (
                   <Feature key={idx} {...props} />
                 ))}
               </div>

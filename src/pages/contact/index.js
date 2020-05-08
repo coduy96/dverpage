@@ -14,8 +14,8 @@ import classnames from "classnames";
 import styles from "./styles.module.css";
 import users from "../../data/users";
 
-const TITLE = "Liên lạc với Dver";
-const DESCRIPTION = "Để có một sản phẩm tuyệt vời";
+const TITLE = "Hãy kể về ý tưởng của bạn";
+const DESCRIPTION = "Dver sẽ đồng hành cùng bạn!";
 
 function Showcase() {
   const [isLoading, setLoading] = useState(true);
