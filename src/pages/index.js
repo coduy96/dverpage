@@ -64,7 +64,7 @@ const QUOTES = [
     thumbnail: require("../data/quotes/duyco.jpg"),
     name: "Duy Cổ",
     title: "Fullstack developer",
-    text: <>" Tôi thích sự bất khả thi trong những ý tưởng! "</>,
+    text: <>" Tôi thích sự bất khả thi của những ý tưởng! "</>,
   },
 ];
 
