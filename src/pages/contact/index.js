@@ -25,10 +25,11 @@ function Showcase() {
         <div className="text--center margin-bottom--xl">
           <h1>{TITLE}</h1>
           <p>{DESCRIPTION}</p>
+          <div className={isLoading ? styles.loader : null}></div>
+
           <div className={styles.announcementInner}>
             <iframe
-              onLoad={() => setLoading(!isLoading)}
-              className={isLoading ? styles.loader : null}
+              onLoad={() => setLoading(false)}
               scrolling="no"
               src="https://thirsty-newton-e2d20b.netlify.com/"
               width="400"
