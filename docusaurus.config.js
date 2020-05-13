@@ -4,8 +4,8 @@ module.exports = {
   url: "https://dver.now.sh",
   baseUrl: "/",
   favicon: "img/favicon.ico",
-  organizationName: "facebook", // Usually your GitHub org/user name.
-  projectName: "docusaurus",
+  organizationName: "dver", // Usually your GitHub org/user name.
+  projectName: "dverwebsite",
   plugins: [
     [
       "@docusaurus/plugin-ideal-image",
@@ -98,6 +98,13 @@ module.exports = {
       copyright: `Copyright © ${new Date().getFullYear()} Dver`
     }
   },
+  scripts: [
+    {
+      src: '/js/drift.js',
+      async: true,
+      defer: true,
+    },
+  ],
   presets: [
     [
       "@docusaurus/preset-classic",
