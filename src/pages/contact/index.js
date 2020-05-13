@@ -25,16 +25,16 @@ function Showcase() {
         <div className="text--center margin-bottom--xl">
           <h1>{TITLE}</h1>
           <p>{isLoading ? "Đang tải trang bạn đợi 1 tí nhé" : DESCRIPTION}</p>
-          {/* <iframe
+          <iframe
             padding="0"
             margin="0"
             onLoad={() => setLoading(false)}
             scrolling="no"
             src="https://thirsty-newton-e2d20b.netlify.com/"
-            width="400"
-            height="560"
+            width="300"
+            height="450"
             frameBorder="0"
-          ></iframe> */}
+          ></iframe>
         </div>
       </div>
     </Layout>
