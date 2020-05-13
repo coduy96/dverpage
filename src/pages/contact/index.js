@@ -25,7 +25,7 @@ function Showcase() {
         <div className="text--center margin-bottom--xl">
           <h1>{TITLE}</h1>
           <p>{isLoading ? "Đang tải trang bạn đợi 1 tí nhé" : DESCRIPTION}</p>
-          <iframe
+          {/* <iframe
             padding="0"
             margin="0"
             onLoad={() => setLoading(false)}
@@ -34,7 +34,7 @@ function Showcase() {
             width="400"
             height="560"
             frameBorder="0"
-          ></iframe>
+          ></iframe> */}
         </div>
       </div>
     </Layout>
