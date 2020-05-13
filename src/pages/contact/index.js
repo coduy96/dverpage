@@ -32,7 +32,7 @@ function Showcase() {
             scrolling="no"
             src="https://thirsty-newton-e2d20b.netlify.com/"
             width="300"
-            height="450"
+            height="550"
             frameBorder="0"
           ></iframe>
         </div>
