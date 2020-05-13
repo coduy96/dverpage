@@ -98,13 +98,6 @@ module.exports = {
       copyright: `Copyright © ${new Date().getFullYear()} Dver`
     }
   },
-  scripts: [
-    {
-      src: '/js/drift.js',
-      async: true,
-      defer: true,
-    },
-  ],
   presets: [
     [
       "@docusaurus/preset-classic",
