@@ -134,7 +134,7 @@ function Home() {
         className={classnames(styles.section, styles.sectionAlt, styles.quotes)}
       ></div>
       <main>
-        {features && features.length && (
+        {/* {features && features.length && (
           <section className={styles.features}>
             <div className="container">
               <div className="row">
@@ -146,7 +146,7 @@ function Home() {
           </section>
         )}
 
-        <hr className={styles.dotted, "container"}/>
+        <hr className={styles.dashed}/> */}
 
         {features2 && features2.length && (
           <section className={styles.features}>
