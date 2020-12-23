@@ -14,7 +14,7 @@ import classnames from "classnames";
 import styles from "./styles.module.css";
 import users from "../../data/users";
 
-const TITLE = "Hãy kể về ý tưởng của bạn";
+const TITLE = "Hãy kể về ý tưởng của a Tiến";
 const DESCRIPTION = "Dver luôn lắng nghe!";
 
 function Showcase() {
